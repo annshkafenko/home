@@ -8,7 +8,7 @@ if count == 3:
     a = int(values[0])
     b = int(values[1])
     c = int(values[2])
-    if a == 0 or b == 0 or c == 0:
+    if a <= 0 or b <= 0 or c <= 0:
         print('Такого трикутника не існує')
     else:
         P = a+b+c
@@ -35,7 +35,7 @@ elif count == 2:
     b = int(b)
     P = (a+b)*2
     s = a*b
-    if a == 0 or b == 0:
+    if a <= 0 or b <= 0:
         print('Такої фігури не існує')
     else:
         if a == b:
@@ -46,7 +46,7 @@ elif count == 2:
             print(result)
 elif count == 1:
     a = int(values[0])
-    if a == 0:
+    if a <= 0:
         print('Такої фігури не існує')
     else:
         P = round((2 * Pi * a), 2)
